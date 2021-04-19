@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My EPL</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="left">
+        <div class="nav-link-wrapper">
+          <a>My EPL</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="/index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="/news.html">News</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="/Players.html">Players</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="/MyEleven.html">MyEleven</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="">
+
+      <div class="content-wrapper">
+        <div class="site-items-wrapper">
+          <div class="site-item-wrapper">
+            <div
+              class="site-img-background"
+              style="background-image: url(/images/Epl.jpg);"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <a href="/pl.html">
+                  <img src="/images/logos/Salah.png" />
+                </a>
+              </div>
+              <div class="subtitle">
+                Premier League 2020 Standings and Accolades.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+ 
+   <!-- Initialize Firebase -->
+   <script src="/__/firebase/init.js"></script>
+  <script>
+    const siteitems = document.querySelectorAll(".site-item-wrapper");
+
+    siteitems.forEach((siteitem) => {
+      siteitem.addEventListener("mouseover", () => {
+        console.log(siteitem.childNodes[1].classList);
+        siteitem.childNodes[1].classList.add("img-darken");
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+ 
+</html>

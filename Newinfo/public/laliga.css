@@ -1,0 +1,38 @@
+/*Master Style */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+}
+
+.nav-wrapper > .left > div {
+    margin-right: 20px;
+    margin-left: 0em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s;
+}
